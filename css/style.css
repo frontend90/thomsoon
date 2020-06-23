@@ -1,0 +1,368 @@
+@font-face {
+  font-family: 'fa-solid-900';
+  src: url("../fonts/fa-solid-900.ttf");
+}
+
+@font-face {
+  font-family: 'fa-brands-400';
+  src: url("../fonts/fa-brands-400.ttf");
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url("../fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url("../fonts/Raleway-Black.ttf");
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url("../fonts/Raleway-SemiBold.ttf");
+}
+
+body {
+  font-family: 'Raleway-Regular';
+  font-size: 14px;
+  color: #000000;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.header .top-header {
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 80px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .top-header.active {
+  z-index: 9999;
+}
+
+.header .top-header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .top-header .nav .nav-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .top-header .nav .nav-wrap .logo h1 {
+  text-transform: uppercase;
+  font-size: 23px;
+  font-family: 'Raleway-Bold';
+}
+
+.header .top-header .nav .nav-wrap .logo h1 a {
+  color: #000000;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .top-header .nav .nav-wrap .logo h1 a:hover {
+  color: #999999;
+}
+
+.header .top-header .nav .nav-wrap .menu {
+  margin-left: 15px;
+}
+
+.header .top-header .nav .nav-wrap .menu .burger {
+  display: none;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul li {
+  text-transform: uppercase;
+  margin-left: 0px;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul li:hover ul {
+  display: block;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul li:first-of-type {
+  margin-left: 0;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul li a {
+  font-size: 13px;
+  color: #c3c3c3;
+  font-family: 'Raleway-Bold';
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 50px;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul li a:hover {
+  color: #000000;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul li ul {
+  overflow: hidden;
+  display: none;
+  background: #f9f9f9;
+  z-index: 20;
+  padding: 0 35px;
+  position: absolute;
+}
+
+.header .top-header .nav .nav-wrap .menu .main-menu ul li ul li a {
+  display: inline-block;
+  line-height: 50px;
+  margin-left: 0;
+}
+
+.header .top-header .nav .social {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .top-header .nav .social.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .top-header .nav .social a {
+  color: #000000;
+  margin-left: 25px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .top-header .nav .social a:hover {
+  color: #999999;
+}
+
+.header .top-header .nav .social a:first-of-type {
+  margin-left: 0;
+}
+
+.header .top-header .nav .social a .fab {
+  font-family: 'fa-brands-400';
+  font-size: 15px;
+}
+
+.main-content .sidebar {
+  background: #f4f4f4 url(../img/header/sidebar/bg.jpg) no-repeat;
+  position: absolute;
+  width: 33.3%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 9;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.main-content .sidebar .parallax-option {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content .sidebar .parallax-option .parallax {
+  position: absolute;
+}
+
+.main-content .main-title {
+  margin-top: 150px;
+  width: 40%;
+}
+
+.main-content .main-title h2 {
+  font-size: 43px;
+  text-transform: uppercase;
+  font-family: 'Raleway-Black';
+  line-height: 70px;
+}
+
+.main-content .main-title .type-wrap .typewrite {
+  font-size: 43px;
+  text-transform: uppercase;
+  font-family: 'Raleway-Black';
+  line-height: 70px;
+}
+
+.main-content .main-title .type-wrap .typed-cursor {
+  font-size: 43px;
+  text-transform: uppercase;
+  font-family: 'Raleway-Black';
+  line-height: 70px;
+  padding-left: 5px;
+}
+
+.main-content .main-title p {
+  font-size: 13px;
+  color: #8d8d8d;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 800px) {
+  .header .top-header .nav .nav-wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 80px;
+  }
+  .header .top-header .nav .nav-wrap .menu .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    cursor: pointer;
+    z-index: 9999;
+    background: #000000;
+  }
+  .header .top-header .nav .nav-wrap .menu .burger.active span {
+    display: none;
+  }
+  .header .top-header .nav .nav-wrap .menu .burger.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: auto;
+  }
+  .header .top-header .nav .nav-wrap .menu .burger.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: auto;
+  }
+  .header .top-header .nav .nav-wrap .menu .burger span {
+    background: #ffffff;
+    height: 3px;
+    width: 15px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  .header .top-header .nav .nav-wrap .menu .burger::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    background: #ffffff;
+    top: 20px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  .header .top-header .nav .nav-wrap .menu .burger::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    background: #ffffff;
+    bottom: 20px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  .header .top-header .nav .nav-wrap .menu .main-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header .top-header .nav .nav-wrap .menu .main-menu ul {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .header .top-header .nav .nav-wrap .menu .main-menu ul li:hover ul {
+    display: none;
+  }
+  .header .top-header .nav .nav-wrap .menu .main-menu ul li a {
+    margin: 0;
+    color: #999999;
+    padding: 12px 12px 12px 20px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    font-size: 35px;
+    line-height: 70px;
+    text-transform: capitalize;
+    font-family: 'Raleway-SemiBold';
+  }
+  .header .top-header .nav .nav-wrap .menu .main-menu ul li a:hover {
+    color: #ffffff;
+  }
+  .header .top-header .nav .nav-wrap .menu .main-menu.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header .top-header .nav .social {
+    display: none;
+  }
+  .main-content .sidebar {
+    display: none;
+  }
+  .main-content .main-title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .top-header .nav .nav-wrap .menu .main-menu ul li a {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

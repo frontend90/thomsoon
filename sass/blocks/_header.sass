@@ -1,0 +1,85 @@
+.header
+  & .top-header
+    background: #ffffff
+    position: fixed 
+    width: 100%
+    left: 0
+    top: 0
+    height: 80px 
+    transition: .3s linear 
+    &.active 
+      z-index: 9999
+    & .nav 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & .nav-wrap 
+        display: flex 
+        align-items: center
+        & .logo 
+          & h1 
+            text-transform: uppercase
+            font-size: 23px
+            +bold 
+            & a 
+              color: #000000
+              transition: .3s linear 
+              &:hover 
+                color: #999999 
+        & .menu 
+          margin-left: 15px 
+          & .burger 
+            display: none 
+          & .main-menu
+            & ul 
+              display: flex 
+              align-items: center
+              list-style: none 
+              & li  
+                text-transform: uppercase
+                margin-left: 0px 
+                &:hover ul 
+                  display: block 
+                &:first-of-type
+                  margin-left: 0
+                & a 
+                  font-size: 13px
+                  color: #c3c3c3
+                  +bold 
+                  transition: .3s linear 
+                  display: inline-block
+                  line-height: 80px 
+                  margin-left: 50px 
+                  &:hover
+                    color: #000000
+                & ul 
+                  overflow: hidden
+                  display: none 
+                  background: #f9f9f9
+                  z-index: 20
+                  padding: 0 35px 
+                  position: absolute
+                  & li 
+                    & a 
+                      display: inline-block 
+                      line-height: 50px 
+                      margin-left: 0
+      & .social
+        opacity: 0
+        visibility: hidden
+        transition: .3s linear 
+        &.active 
+          opacity: 1
+          visibility: visible
+        & a 
+          color: #000000
+          margin-left: 25px
+          transition: .3s linear 
+          &:hover
+            color: #999999 
+          &:first-of-type
+            margin-left: 0
+          & .fab 
+            +brand 
+            font-size: 15px 
+              
