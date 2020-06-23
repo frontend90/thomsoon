@@ -13,6 +13,25 @@
       display: flex 
       align-items: center
       justify-content: space-between
+      flex-direction: row-reverse
+      & .social
+        opacity: 0 
+        visibility: hidden 
+        transition: .3s linear 
+        &.active 
+          opacity: 1
+          visibility: visible
+        & a 
+          color: #000000
+          margin-left: 25px
+          transition: .3s linear 
+          &:hover
+            color: #999999 
+          &:first-of-type
+            margin-left: 0
+          & .fab 
+            +brand 
+            font-size: 15px 
       & .nav-wrap 
         display: flex 
         align-items: center
@@ -35,6 +54,8 @@
               display: flex 
               align-items: center
               list-style: none 
+              & .show-home
+                display: none 
               & li  
                 text-transform: uppercase
                 margin-left: 0px 
@@ -64,22 +85,4 @@
                       display: inline-block 
                       line-height: 50px 
                       margin-left: 0
-      & .social
-        opacity: 0
-        visibility: hidden
-        transition: .3s linear 
-        &.active 
-          opacity: 1
-          visibility: visible
-        & a 
-          color: #000000
-          margin-left: 25px
-          transition: .3s linear 
-          &:hover
-            color: #999999 
-          &:first-of-type
-            margin-left: 0
-          & .fab 
-            +brand 
-            font-size: 15px 
               
