@@ -99,3 +99,8 @@ function adaptive_function() {
   adaptive_header(w, h);
 }
 adaptive_function();
+
+/*****************    preloader    ******************/
+$(window).on('load', function () {
+  $('.preloader').delay(2000).fadeOut('slow');
+});
